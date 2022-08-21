@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="8dp">
+    <!--    Alumni Design-->
+    <LinearLayout
+        android:id="@+id/lytAlumni"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:visibility="visible"
+        android:layout_margin="8dp"
+        android:weightSum="6">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:src="@drawable/alumni_tbslct"
+            android:id="@+id/imgAlProfile"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:layout_weight="4"
+            android:weightSum="4">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/txtAlName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:layout_weight="1"
+                    android:text="Name "/>
+
+                <TextView
+                    android:id="@+id/txtAlBranch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:layout_weight="1"
+                    android:text=" Branch"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/txtAlBatch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif-condensed-medium"
+
+                    android:gravity="center"
+                    android:text="Batch"/>
+
+                <TextView
+                    android:id="@+id/txtAlDept"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif-condensed-medium"
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Department"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                android:layout_weight="1"
+                android:weightSum="3">
+                <TextView
+                    android:id="@+id/txtAlCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif-condensed-medium"
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Company"/>
+
+                <TextView
+                    android:id="@+id/txtAlPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif-condensed-medium"
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Post"/>
+                <TextView
+                    android:id="@+id/txtAlPackage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Package"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/txtAlMob"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif-condensed-medium"
+
+                    android:gravity="start"
+                    android:text="Mob No"/>
+
+                <TextView
+                    android:id="@+id/txtAlEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:maxLines="1"
+                    android:ems="1"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="Email"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:weightSum="2"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_call_24"
+                android:layout_marginStart="25dp"
+                android:layout_gravity="center"
+                android:id="@+id/imgCall" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_sms_24"
+                android:id="@+id/imgSMS"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

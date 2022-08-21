@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SDashboard_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/frmNavigate"
+            android:layout_above="@+id/btmDash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </FrameLayout>
+
+        <com.ss.bottomnavigation.BottomNavigation
+            android:id="@+id/btmDash"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            app:layout_anchor="@id/frmNavigate"
+            app:layout_anchorGravity="bottom">
+
+            <com.ss.bottomnavigation.TabItem
+                android:id="@+id/tbAlumni"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                app:tab_icon="@drawable/alumni_tbslct"
+                app:tab_text="Alumni"
+                app:tab_text_color="@color/colorAccent"
+                app:unselected_tab_icon="@drawable/graduate"
+                app:unselected_tab_text_color="@android:color/black"
+                />
+
+            <com.ss.bottomnavigation.TabItem
+                android:id="@+id/tbPlacements"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                app:tab_icon="@drawable/product_placementslct"
+                app:tab_text="Placements"
+                app:tab_text_color="@color/colorAccent"
+                app:unselected_tab_icon="@drawable/product_placement"
+                app:unselected_tab_text_color="@android:color/black"
+                />
+
+            <com.ss.bottomnavigation.TabItem
+                android:id="@+id/tbNotices"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                app:tab_icon="@drawable/noticeslct"
+                app:tab_text="Notices"
+                app:tab_text_color="@color/colorAccent"
+                app:unselected_tab_icon="@drawable/notice"
+                app:unselected_tab_text_color="@android:color/black"
+                />
+            <com.ss.bottomnavigation.TabItem
+                android:id="@+id/tbEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                app:tab_icon="@drawable/ic_baseline_event_24lt"
+                app:tab_text="Events"
+                app:tab_text_color="@color/colorAccent"
+                app:unselected_tab_icon="@drawable/ic_baseline_event_24"
+                app:unselected_tab_text_color="@android:color/black"
+                />
+            <com.ss.bottomnavigation.TabItem
+                android:id="@+id/tbProfile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                app:tab_icon="@drawable/userlct"
+                app:tab_text="Profile"
+                app:tab_text_color="@color/colorAccent"
+                app:unselected_tab_icon="@drawable/user"
+                app:unselected_tab_text_color="@android:color/black"
+                />
+        </com.ss.bottomnavigation.BottomNavigation>
+    </RelativeLayout>
+
+</LinearLayout>

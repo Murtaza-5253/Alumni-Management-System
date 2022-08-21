@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alumni System</string>
+
+    <string name="login_email_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+</resources>

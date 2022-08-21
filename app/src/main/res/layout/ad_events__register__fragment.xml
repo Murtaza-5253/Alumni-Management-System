@@ -1,0 +1,157 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".Ad_Placement_Register_Fragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imgCompanyProfile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:onClick="profile"
+                android:src="@drawable/tcs"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Event Name"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp"
+                    android:textColorHint="#100F0F"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txtEvtName"
+                    android:autofillHints="Event Name">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Event Date"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:inputType="date"
+                    android:textColorHint="#100F0F"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/txtEvtDate">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Company Name"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#100F0F"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/txtCmName">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Event Requirement"
+                    android:textSize="18sp"
+                    android:textColorHint="#100F0F"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/txtEvtReq">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Event Co-Ordinator"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:inputType="number"
+                    android:textColorHint="#100F0F"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/txtEvtCo">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Event Co Email"
+                    android:textSize="18sp"
+                    android:inputType="textMultiLine|textPostalAddress|textImeMultiLine"
+                    android:textColorHint="#100F0F"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/txtEvtCoEmail">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Event"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/btnUpPlacement"
+                android:background="@android:color/holo_red_light"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:onClick="uploadPlacement"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="50dp">
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

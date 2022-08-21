@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Al_Alumni_Fragment">
+    <TextView
+        android:id="@+id/txtNoData"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="No Data Available"
+        android:textSize="24sp"></TextView>
+
+    <TextView
+        android:id="@+id/txtHeading"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="Notable Alumni of This College"
+        android:textSize="24sp"></TextView>
+
+    <com.dinuscxj.refresh.RecyclerRefreshLayout
+        android:id="@+id/refrshlyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtHeading">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lstAlumni"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </androidx.recyclerview.widget.RecyclerView>
+    </com.dinuscxj.refresh.RecyclerRefreshLayout>
+
+
+
+</RelativeLayout>
